@@ -5,45 +5,94 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff8f0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #d62828;
-    transition: color 0.3s;
-  }
-  
-  a:hover {
-    color: #a4161a;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
+:root{
+  --color-primary:#d8801d;
+  --color-dark: #4b0000;
+  --color-light: #fad161;
+  --color-white:#fff;
+}
+/*barra de rolagem suave*/
+html{
+  scroll-behavior: smooth; 
+}
+
+a{
+color: var(--color-primary);
+}
+ 
   /* Cabeçalho */
   header {
-    background-color: #d62828;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.5rem 0;
   }
   
   nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    list-style: none;
+    text-align: center;
   }
   
+  nav li{
+    display: inline;
+    margin: 0 1.5rem;
+  }
+
   nav a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 700;
   }
-  
+
+  .hero {
+    background-image: url(img/pexels-narda-yescas-1566837.jpg);
+    background-size: cover;
+    color: var(--color-white);
+    min-height: 75vh;
+    padding: 10rem 0;
+    text-align: center;
+  }
+
+  .hero h1{
+    font-size: 4rem;
+    font-weight: 100;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  section:not(#home) {
+    padding: 4rem;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  .menu-list{
+    list-style: none;
+  }
+
+  .menu-list > li {
+    background-color: var(--color-light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 1.5rem;
+    height: 28rem;
+    width: 28rem;
+    text-align: left;
+  }
+
+  .menu-list img{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    object-fit: cover;
+    width: 100%;
+  }
