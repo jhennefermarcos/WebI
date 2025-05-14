@@ -96,3 +96,41 @@ color: var(--color-primary);
     object-fit: cover;
     width: 100%;
   }
+
+ .menu-list h3{
+    padding: 0.75rem 1rem 0;
+    font-size: 1.2rem;
+    color: var(--color-dark);
+  }
+
+  .menu-list p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  #about, #contact {
+    display:block;
+    background-color: var(--color-primary);
+    border-top: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    text-align: center;
+  }
+  
+  #about p, #contact p {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    font-size: 1rem;
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1;
+  }
+
+  footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
