@@ -1,0 +1,50 @@
+:root {
+    --cor-fundo: #7429ff;
+    --cor-borda: #4200db;
+    --cor-sombra: #9061ff;
+    --cor-botao: #9660fa;
+    --cor-botao-hover: #4f0099;
+    --cor-botao-borda: #4c0aa3;
+    --cor-fundo-calculadora: #6900ff;
+    --cor-texto: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cor-fundo-calculadora) url('Calculadora-bg.png') no-repeat center center fixed;
+    color: var(--cor-texto);
+}
+#calculadora {
+    width: 250px;
+    margin: 400px auto;
+    padding: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 30px;
+    background: var(--cor-fundo);
+    box-shadow: 2px 2px 8px var(--cor-sombra);
+    text-align: center; 
+}
+#resultado {
+    width: 210px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 18px;
+    border-radius: 100px;
+    border: 1px solid var(--cor-texto);
+    padding-right: 5px;
+}
+button {
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+    margin: 2px;
+    border-radius: 100px;
+    border: 1px solid var(--cor-botao-borda);
+    background: var(--cor-botao);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: var(--cor-botao-hover);
+}
