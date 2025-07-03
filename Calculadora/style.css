@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 :root {
     --cor-fundo: #7429ff;
     --cor-borda: #4200db;
@@ -10,13 +12,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background: var(--cor-fundo-calculadora) url('Calculadora-bg.png') no-repeat center center fixed;
     color: var(--cor-texto);
 }
 #calculadora {
     width: 250px;
-    margin: 400px auto;
+    margin: 300px auto;
     padding: 15px;
     border: 1px solid var(--cor-borda);
     border-radius: 30px;

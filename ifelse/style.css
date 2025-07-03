@@ -1,0 +1,28 @@
+:root {
+    --cor-fundopg: #7429ff;
+    --cor-fundocx: #bb9af9;
+    --cor-borda: #4200db;
+    --cor-sombra: #ffffff;
+    --cor-texto: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background: var(--cor-fundopg);
+}
+
+#caixa{
+    width: 250px;
+    margin: 100px auto;
+    padding: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 30px;
+    background: var(--cor-fundocx);
+    box-shadow: 2px 2px 8px var(--cor-sombra);
+    text-align: center;
+}
+
+#inNome, #inNota1, #inNota2, #btResultado{
+    border-radius: 5px;
+}
